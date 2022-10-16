@@ -1,4 +1,4 @@
-#include "Game.hpp"
+#include "game.hpp"
 #include "raylib.h"
 
 Game::Game() {}
