@@ -1,0 +1,5 @@
+-xc++
+-std=c++11
+-Iraylib-master/src
+-Iraylib-master/src/external
+-Iraylib-master/src/external/glfw/include
