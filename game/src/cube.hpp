@@ -3,63 +3,63 @@
 #ifndef CUBE_H
 #define CUBE_H
 
-enum class CubeColor
-{
-  white,
-  green,
-  blue,
-  orange,
-  red,
-  yellow,
-};
-
-enum class CubeSide
-{
-  up = 0,
-  down = 1,
-  front = 2,
-  back = 3,
-  left = 4,
-  right = 5,
-};
-
 class Cube
 {
 public:
   Cube();
   ~Cube();
 
+  enum class Color
+  {
+    white,
+    green,
+    blue,
+    orange,
+    red,
+    yellow,
+  };
+
+  enum class Side
+  {
+    up = 0,
+    down = 1,
+    front = 2,
+    back = 3,
+    left = 4,
+    right = 5,
+  };
+
 private:
-  CubeColor faces[6][3][3] = {
+  Color faces[6][3][3] = {
       {
-          {CubeColor::orange, CubeColor::orange, CubeColor::orange},
-          {CubeColor::orange, CubeColor::orange, CubeColor::orange},
-          {CubeColor::orange, CubeColor::orange, CubeColor::orange},
+          {Color::orange, Color::orange, Color::orange},
+          {Color::orange, Color::orange, Color::orange},
+          {Color::orange, Color::orange, Color::orange},
       },
       {
-          {CubeColor::red, CubeColor::red, CubeColor::red},
-          {CubeColor::red, CubeColor::red, CubeColor::red},
-          {CubeColor::red, CubeColor::red, CubeColor::red},
+          {Color::red, Color::red, Color::red},
+          {Color::red, Color::red, Color::red},
+          {Color::red, Color::red, Color::red},
       },
       {
-          {CubeColor::white, CubeColor::white, CubeColor::white},
-          {CubeColor::white, CubeColor::white, CubeColor::white},
-          {CubeColor::white, CubeColor::white, CubeColor::white},
+          {Color::white, Color::white, Color::white},
+          {Color::white, Color::white, Color::white},
+          {Color::white, Color::white, Color::white},
       },
       {
-          {CubeColor::yellow, CubeColor::yellow, CubeColor::yellow},
-          {CubeColor::yellow, CubeColor::yellow, CubeColor::yellow},
-          {CubeColor::yellow, CubeColor::yellow, CubeColor::yellow},
+          {Color::yellow, Color::yellow, Color::yellow},
+          {Color::yellow, Color::yellow, Color::yellow},
+          {Color::yellow, Color::yellow, Color::yellow},
       },
       {
-          {CubeColor::green, CubeColor::green, CubeColor::green},
-          {CubeColor::green, CubeColor::green, CubeColor::green},
-          {CubeColor::green, CubeColor::green, CubeColor::green},
+          {Color::green, Color::green, Color::green},
+          {Color::green, Color::green, Color::green},
+          {Color::green, Color::green, Color::green},
       },
       {
-          {CubeColor::blue, CubeColor::blue, CubeColor::blue},
-          {CubeColor::blue, CubeColor::blue, CubeColor::blue},
-          {CubeColor::blue, CubeColor::blue, CubeColor::blue},
+          {Color::blue, Color::blue, Color::blue},
+          {Color::blue, Color::blue, Color::blue},
+          {Color::blue, Color::blue, Color::blue},
       },
   };
 };
