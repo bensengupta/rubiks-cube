@@ -5,15 +5,18 @@ Game::Game() {}
 
 Game::~Game() {}
 
-bool Game::Initialize() {
+bool Game::Initialize()
+{
   SetTargetFPS(60);
   InitWindow(800, 600, "Rubiks Cube");
 
   return true;
 }
 
-void Game::RunLoop() {
-  while (!WindowShouldClose()) {
+void Game::RunLoop()
+{
+  while (!WindowShouldClose())
+  {
     ProcessInput();
     UpdateGame();
     GenerateOutput();
@@ -22,7 +25,8 @@ void Game::RunLoop() {
 
 void Game::Shutdown() { CloseWindow(); }
 
-void Game::GenerateOutput() {
+void Game::GenerateOutput()
+{
   BeginDrawing();
 
   // clears the screen
