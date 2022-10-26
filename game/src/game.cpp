@@ -5,6 +5,7 @@ Game::Game() {}
 
 Game::~Game() {}
 
+
 bool Game::Initialize()
 {
   SetTargetFPS(60);
