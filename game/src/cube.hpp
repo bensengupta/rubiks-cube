@@ -11,55 +11,55 @@ public:
 
   enum class Color
   {
-    white,
-    green,
-    blue,
-    orange,
-    red,
-    yellow,
+    White,
+    Green,
+    Blue,
+    Orange,
+    Red,
+    Yellow,
   };
 
   enum class Side
   {
-    up = 0,
-    down = 1,
-    front = 2,
-    back = 3,
-    left = 4,
-    right = 5,
+    Up = 0,
+    Down = 1,
+    Front = 2,
+    Back = 3,
+    Left = 4,
+    Right = 5,
   };
 
 private:
   Color faces[6][3][3] = {
       {
-          {Color::orange, Color::orange, Color::orange},
-          {Color::orange, Color::orange, Color::orange},
-          {Color::orange, Color::orange, Color::orange},
+          {Color::Orange, Color::Orange, Color::Orange},
+          {Color::Orange, Color::Orange, Color::Orange},
+          {Color::Orange, Color::Orange, Color::Orange},
       },
       {
-          {Color::red, Color::red, Color::red},
-          {Color::red, Color::red, Color::red},
-          {Color::red, Color::red, Color::red},
+          {Color::Red, Color::Red, Color::Red},
+          {Color::Red, Color::Red, Color::Red},
+          {Color::Red, Color::Red, Color::Red},
       },
       {
-          {Color::white, Color::white, Color::white},
-          {Color::white, Color::white, Color::white},
-          {Color::white, Color::white, Color::white},
+          {Color::White, Color::White, Color::White},
+          {Color::White, Color::White, Color::White},
+          {Color::White, Color::White, Color::White},
       },
       {
-          {Color::yellow, Color::yellow, Color::yellow},
-          {Color::yellow, Color::yellow, Color::yellow},
-          {Color::yellow, Color::yellow, Color::yellow},
+          {Color::Yellow, Color::Yellow, Color::Yellow},
+          {Color::Yellow, Color::Yellow, Color::Yellow},
+          {Color::Yellow, Color::Yellow, Color::Yellow},
       },
       {
-          {Color::green, Color::green, Color::green},
-          {Color::green, Color::green, Color::green},
-          {Color::green, Color::green, Color::green},
+          {Color::Green, Color::Green, Color::Green},
+          {Color::Green, Color::Green, Color::Green},
+          {Color::Green, Color::Green, Color::Green},
       },
       {
-          {Color::blue, Color::blue, Color::blue},
-          {Color::blue, Color::blue, Color::blue},
-          {Color::blue, Color::blue, Color::blue},
+          {Color::Blue, Color::Blue, Color::Blue},
+          {Color::Blue, Color::Blue, Color::Blue},
+          {Color::Blue, Color::Blue, Color::Blue},
       },
   };
 };
